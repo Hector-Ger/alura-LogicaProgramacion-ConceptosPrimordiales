@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>Numeros pares</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function espar(n){
+        var residuo = n%2;
+        if (residuo==0){
+            imprimir(n);
+        }
+    }
+    var contador = 1
+
+    while(contador<=100){
+        espar(contador);
+        contador++;
+    }
+    imprimir("fin");
+
+
+</script>
